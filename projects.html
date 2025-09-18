@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - TechCenter</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/nav.css">
+  <link rel="stylesheet" href="./assets/css/projects.css">
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body id="top">
+  <!-- Header Section -->
+  <header class="header" data-header>
+    <div class="nb-container">
+      <!-- Overlay for mobile menu -->
+      <div class="nb-overlay" id="nb-overlay"></div>
+
+      <!-- Desktop Navigation -->
+      <nav class="nb-navbar">
+        <div class="nb-brand-container">
+          <a href="index.html" class="nb-brand">
+            <span class="nb-brand-tech">Tech</span><span class="nb-brand-nova">Center</span>
+          </a>
+        </div>
+        <ul class="nb-nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nb-hamburger" id="nb-menu-btn">☰</div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="nb-mobile-nav" id="nb-mobile-menu">
+        <button class="nb-close-btn" id="nb-close-btn" type="button">✕</button>
+        <div class="nb-mobile-brand">
+          <span class="nb-mobile-brand-tech">Tech</span><span class="nb-mobile-brand-nova">Nova</span>
+        </div>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="projects-hero">
+    <div class="container">
+      <h1 class="hero-title">Our Projects</h1>
+      <p class="hero-subtitle">Showcasing Excellence in Digital Innovation</p>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-wrapper">
+        <div class="filter-title">Filter by:</div>
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="web">Web Development</button>
+          <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+          <button class="filter-btn" data-filter="design">UI/UX Design</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase -->
+  <section class="projects-showcase">
+    <div class="container">
+      <div class="projects-grid">
+        <!-- Project Item 1 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-img-container">
+            <img src="./assets/images/ams.jpg" alt="Attendance Management" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">AttendFlow</h3>
+            <p class="project-category">Cross-Platform Application</p>
+            <p class="project-description">A full-featured Attendance Management solution which is Cross-Platform andd user-friendly! </p>
+            <div class="project-tech">
+              <span class="tech-tag">.NET MAUI</span>
+              <span class="tech-tag">XAML</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Sqlite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Item 2 -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-container">
+            <img src="./assets/images/empsys.jpg" alt="Employee Management System" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Employee Management System</h3>
+            <p class="project-category">Web App</p>
+            <p class="project-description">A comprehensive employee management app with progress monitoring, premium polished UI and and advanced features.</p>
+            <div class="project-tech">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Firebase</span>
+              <span class="tech-tag">Google Fit API</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Item 3 -->
+        <div class="project-card" data-category="web">
+          <div class="project-img-container">
+            <img src="./assets/images/project2.jpg" alt="Librosis" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Librosis</h3>
+            <p class="project-category">Web App</p>
+            <p class="project-description">A Web Application for Managing Library System with advanced Features, real-time statistics and premium UI.</p>
+            <div class="project-tech">
+              <span class="tech-tag">HTML</span>
+              <span class="tech-tag">CSS</span>
+              <span class="tech-tag">JS</span>
+              <span class="tech-tag">Node JS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Item 4 -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-img-container">
+            <img src="./assets/images/ocrp.jpg" alt="Hospital Management System" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">OCR App</h3>
+            <p class="project-category">Optical Character Recognition</p>
+            <p class="project-description">Comprehensive local text extractor app, that runs locally on your device and you can extract text from any document! </p>
+            <div class="project-tech">
+              <span class="tech-tag">.NET MAUI</span>
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">XAML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Item 5 -->
+        <div class="project-card" data-category="design">
+          <div class="project-img-container">
+            <img src="./assets/images/ui1.jpg" alt="Learning Management System" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Chatting App UI</h3>
+            <p class="project-category">User Interface</p>
+            <p class="project-description">User Friendly, Premium, Polished, Responsive, Creative and Native UI./p>
+            <div class="project-tech">
+              <span class="tech-tag">.NET MAUI</span>
+              <span class="tech-tag">XAML</span>
+              <span class="tech-tag">C#</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Item 6 -->
+        <div class="project-card" data-category="design">
+          <div class="project-img-container">
+            <img src="./assets/images/d1.jpg" alt="Food Delivery App" class="project-img">
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Digital Learning</h3>
+            <p class="project-category">User Interface</p>
+            <p class="project-description">Learning Application that Gives you tricks to solve problems! whether its mathematical or alphabetical that bosst problem-solving skills.</p>
+            <div class="project-tech">
+              <span class="tech-tag">.NET MAUI</span>
+              <span class="tech-tag">XAML</span>
+              <span class="tech-tag">C#</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2 class="cta-title">Ready to Transform Your Digital Presence?</h2>
+        <p class="cta-text">Let's collaborate on your next project and create something exceptional together.</p>
+        <div class="cta-buttons">
+          <a href="contact.html" class="primary-btn">Get In Touch</a>
+          <a href="services.html" class="secondary-btn">Explore Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">TechCenter </a>
+          <p class="footer-text">
+            Providing top-notch IT services and solutions for University of Gujrat students and the broader community.
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/TechnologyVault" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammadbilaltech/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Our Services</p>
+          <ul>
+            <li>
+              <a href="services.html#it-support" class="footer-link">IT Support</a>
+            </li>
+            <li>
+              <a href="services.html#remote-support" class="footer-link">Remote Support</a>
+            </li>
+            <li>
+              <a href="services.html#software-hardware" class="footer-link">Software & Hardware</a>
+            </li>
+            <li>
+              <a href="services.html#graphic-design" class="footer-link">Graphic Design</a>
+            </li>
+            <li>
+              <a href="services.html#web-mobile" class="footer-link">Web & Mobile Development</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Company</p>
+          <ul>
+            <li>
+              <a href="about.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="team.html" class="footer-link">Our Team</a>
+            </li>
+            <li>
+              <a href="testimonials.html" class="footer-link">Testimonials</a>
+            </li>
+            <li>
+              <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Contact Us</p>
+          <address class="footer-text">
+            University of Gujrat<br>
+            Jalalpur Jattan Road, Gujrat<br>
+            Punjab, Pakistan
+          </address>
+          <a href="mailto:info@technova.com" class="footer-link">smuhammadbilalh@gmail.com</a>
+          <a href="tel:+923255806291" class="footer-link">+92 325 5806291</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 TechCenter  IT Services. All Rights Reserved.
+        </p>
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="terms-of-service.html" class="footer-bottom-link">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Filter script -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get all filter buttons and project cards
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const projectCards = document.querySelectorAll('.project-card');
+      
+      // Add click event to each filter button
+      filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+          // Remove active class from all buttons
+          filterButtons.forEach(btn => btn.classList.remove('active'));
+          
+          // Add active class to clicked button
+          this.classList.add('active');
+          
+          // Get filter value
+          const filter = this.getAttribute('data-filter');
+          
+          // Filter projects
+          projectCards.forEach(card => {
+            if (filter === 'all' || card.getAttribute('data-category') === filter) {
+              card.style.display = 'block';
+              setTimeout(() => {
+                card.classList.add('show');
+              }, 50);
+            } else {
+              card.classList.remove('show');
+              setTimeout(() => {
+                card.style.display = 'none';
+              }, 300);
+            }
+          });
+        });
+      });
+      
+      // Set all projects to show initially
+      projectCards.forEach(card => {
+        card.classList.add('show');
+      });
+    });
+  </script>
+</body>
+</html>

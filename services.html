@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCenter IT Services - Services</title>
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/services.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- HEADER -->
+  <header class="header" data-header>
+    <div class="nb-container">
+        <!-- Overlay for mobile menu -->
+        <div class="nb-overlay" id="nb-overlay"></div>
+
+        <!-- Desktop Navigation -->
+        <nav class="nb-navbar">
+            <div class="nb-brand-container">
+                <a href="#" class="nb-brand">
+                    <span class="nb-brand-tech">Tech</span><span class="nb-brand-nova">Center</span>
+                </a>
+            </div>
+            <ul class="nb-nav-links">
+                <li><a href="index.html" >Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nb-hamburger" id="nb-menu-btn">☰</div>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <div class="nb-mobile-nav" id="nb-mobile-menu">
+            <button class="nb-close-btn" id="nb-close-btn" type="button">✕</button>
+            <div class="nb-mobile-brand">
+                <span class="nb-mobile-brand-tech">Tech</span><span class="nb-mobile-brand-nova">Nova</span>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="projects.html">Projects</a>
+            <a href="team.html">Our Team</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- SERVICE HERO -->
+      <section class="section service-hero" aria-label="service hero">
+        <div class="container">
+          <div class="hero-content">
+            <h1 class="h1 hero-title">
+              Our <span class="has-before">IT Services</span>
+            </h1>
+
+            <p class="hero-text">
+              Comprehensive IT solutions tailored to meet your needs with professional expertise and cutting-edge technology.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICE DETAILS -->
+      <section class="section service" aria-label="service">
+        <div class="container">
+          <div class="services-grid">
+            <!-- IT Support Card -->
+            <div class="service-card" id="it-support">
+              <div class="service-content">
+                <h2 class="h3 service-title">IT Support & Consulting</h2>
+                
+                <p class="service-text">
+                  Comprehensive technical assistance to help you navigate technology challenges with ease.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>On-site technical support</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>System optimization</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Get Support</a>
+              </div>
+            </div>
+
+            <!-- Remote Support Card -->
+            <div class="service-card" id="remote-support">
+              <div class="service-content">
+                <h2 class="h3 service-title">Remote Support</h2>
+                
+                <p class="service-text">
+                  Remote diagnosis and resolution of technical issues for faster resolution times.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>24/7 emergency support</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Secure remote connections</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Get Remote Support</a>
+              </div>
+            </div>
+
+            <!-- Software & Hardware Card -->
+            <div class="service-card" id="software-hardware">
+              <div class="service-content">
+                <h2 class="h3 service-title">Software & Hardware Fixes</h2>
+                
+                <p class="service-text">
+                  Comprehensive repair services to keep your devices running smoothly and efficiently.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Software troubleshooting</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Hardware diagnostics</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Request Repair</a>
+              </div>
+            </div>
+
+            <!-- Graphic Design Card -->
+            <div class="service-card" id="graphic-design">
+              <div class="service-content">
+                <h2 class="h3 service-title">Canva Graphic Designing</h2>
+                
+                <p class="service-text">
+                  Create stunning visual content for your business or personal needs using Canva.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Social media graphics</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Marketing materials</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Request Design</a>
+              </div>
+            </div>
+
+            <!-- IT Automation Card -->
+            <div class="service-card" id="it-automation">
+              <div class="service-content">
+                <h2 class="h3 service-title">IT Automation</h2>
+                
+                <p class="service-text">
+                  Streamline your business processes, saving time and reducing errors.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Business process automation</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Custom automation tools</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Explore Automation</a>
+              </div>
+            </div>
+
+            <!-- Web & Mobile Card -->
+            <div class="service-card" id="web-mobile">
+              <div class="service-content">
+                <h2 class="h3 service-title">Web & Mobile Development</h2>
+                
+                <p class="service-text">
+                  Custom web and mobile applications tailored to your specific business needs.
+                </p>
+                
+                <ul class="service-feature-list">
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Responsive website design</span>
+                  </li>
+                  <li>
+                    <ion-icon name="checkmark-circle-outline" aria-hidden="true"></ion-icon>
+                    <span>Mobile app development</span>
+                  </li>
+                </ul>
+                
+                <a href="contact.html" class="btn btn-primary">Start Your Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    </article>
+  </main>
+
+ <!-- FOOTER -->
+ <footer class="footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">TechCenter </a>
+        <p class="footer-text">
+          Providing top-notch IT services and solutions for University of Gujrat students and the broader community.
+        </p>
+        <ul class="social-list">
+          <li>
+            <a href="https://github.com/TechnologyVault" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/muhammadbilaltech/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-list">
+        <p class="footer-list-title">Our Services</p>
+        <ul>
+          <li>
+            <a href="services.html#it-support" class="footer-link">IT Support</a>
+          </li>
+          <li>
+            <a href="services.html#remote-support" class="footer-link">Remote Support</a>
+          </li>
+          <li>
+            <a href="services.html#software-hardware" class="footer-link">Software & Hardware</a>
+          </li>
+          <li>
+            <a href="services.html#graphic-design" class="footer-link">Graphic Design</a>
+          </li>
+          <li>
+            <a href="services.html#web-mobile" class="footer-link">Web & Mobile Development</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-list">
+        <p class="footer-list-title">Company</p>
+        <ul>
+          <li>
+            <a href="about.html" class="footer-link">About Us</a>
+          </li>
+          <li>
+            <a href="team.html" class="footer-link">Our Team</a>
+          </li>
+          <li>
+            <a href="testimonials.html" class="footer-link">Testimonials</a>
+          </li>
+          <li>
+            <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer-list">
+        <p class="footer-list-title">Contact Us</p>
+        <address class="footer-text">
+          University of Gujrat<br>
+          Jalalpur Jattan Road, Gujrat<br>
+          Punjab, Pakistan
+        </address>
+        <a href="mailto:info@technova.com" class="footer-link">smuhammadbilalh@gmail.com</a>
+        <a href="tel:+923255806291" class="footer-link">+92 325 5806291</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 TechCenter IT Services. All Rights Reserved.
+      </p>
+      <ul class="footer-bottom-list">
+        <li>
+          <a href="terms-of-service.html" class="footer-bottom-link">Terms & Conditions</a>
+        </li>
+        <li>
+          <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top">
+    <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

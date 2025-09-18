@@ -1,0 +1,529 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechCenter</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/nav.css">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js" defer></script>
+</head>
+
+<body id="top">
+  <!-- Header Section -->
+  <header class="header" data-header>
+    <div class="nb-container">
+      <!-- Overlay for mobile menu -->
+      <div class="nb-overlay" id="nb-overlay"></div>
+
+      <!-- Desktop Navigation -->
+      <nav class="nb-navbar">
+        <div class="nb-brand-container">
+          <a href="index.html" class="nb-brand">
+            <span class="nb-brand-tech">Tech</span><span class="nb-brand-nova">Center</span>
+          </a>
+        </div>
+        <ul class="nb-nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="team.html">Our Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nb-hamburger" id="nb-menu-btn">☰</div>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <div class="nb-mobile-nav" id="nb-mobile-menu">
+        <button class="nb-close-btn" id="nb-close-btn" type="button">✕</button>
+        <div class="nb-mobile-brand">
+          <span class="nb-mobile-brand-tech">Tech</span><span class="nb-mobile-brand-nova">Nova</span>
+        </div>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="team.html">Our Team</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Image Slider Section -->
+  <section class="hero-slider">
+    <div class="slider-container">
+      <!-- Slides -->
+      <div class="slides-wrapper">
+        <!-- Slide 1 -->
+        <div class="slide active">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=1920&h=1080')"></div>
+          <div class="slide-content">
+            <h1>TechCenter IT Services</h1>
+            <p>IT Services at University of Gujrat</p>
+            <button class="cta-button"><a href="team.html">Learn More</a> </button>
+          </div>
+        </div>
+        
+        <!-- Slide 2 -->
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=1920&h=1080')"></div>
+          <div class="slide-content">
+            <h1>Remote Support</h1>
+            <p>Quick IT Support for faculty & students</p>
+            <button class="cta-button"><a href="contact.html">Contact Us</a> </button>
+          </div>
+        </div>
+        
+        <!-- Slide 3 -->
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&q=80&w=1920&h=1080')"></div>
+          <div class="slide-content">
+            <h1>Fix IT Devices</h1>
+            <p>Fixing Software and Hardware Issues Quickly </p>
+            <button class="cta-button"><a href="contact.html">Contact Us</a> </button>
+          </div>
+        </div>
+        
+        <!-- Slide 4 -->
+        <div class="slide">
+          <div class="slide-bg" style="background-image: url('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1920&h=1080')"></div>
+          <div class="slide-content">
+            <h1>Buy IT Accessories</h1>
+            <p>We sell Laptops and other Devices</p>
+            <button class="cta-button"><a href="contact.html">Order Now</a> </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Navigation Arrows -->
+      <button class="slider-arrow arrow-left">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <button class="slider-arrow arrow-right">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      
+      <!-- Remove duplicate slider dots -->
+      <div class="slider-dots"></div>
+      
+    </div>
+  </section>
+
+
+<!-- Why Choose Us Section - Add after hero slider and before video section -->
+<section class="why-choose-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Our Advantages</span>
+        <h2 class="section-title">Why Choose <span class="accent">TechCenter</span></h2>
+        <div class="title-decoration">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+  
+      <div class="advantages-grid">
+        <!-- Advantage Item 1 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3>Technical Expertise</h3>
+          <p>We have extensive experience working with the latest technologies and can quickly diagnose and solve complex IT issues.</p>
+        </div>
+  
+        <!-- Advantage Item 2 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+            </svg>
+          </div>
+          <h3>Fast Response Time</h3>
+          <p>We understand that IT issues can halt productivity, which is why we guarantee rapid response times and efficient problem resolution.</p>
+        </div>
+  
+        <!-- Advantage Item 3 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v4m0 12v4M4.93 4.93l2.83 2.83m8.48 8.48l2.83 2.83M2 12h4m12 0h4M4.93 19.07l2.83-2.83m8.48-8.48l2.83-2.83"></path>
+            </svg>
+          </div>
+          <h3>Innovative Solutions</h3>
+          <p>We're constantly exploring new technologies and methodologies to provide cutting-edge solutions that drive your success.</p>
+        </div>
+  
+        <!-- Advantage Item 4 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87m-4-12a4 4 0 0 1 0 7.75"></path>
+            </svg>
+          </div>
+          <h3>Dedicated Support</h3>
+          <p>Our customer-first approach means you'll always have access to personalized support from a team that truly cares about your success.</p>
+        </div>
+  
+        <!-- Advantage Item 5 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+              <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+            </svg>
+          </div>
+          <h3>Enhanced Trust</h3>
+          <p>We run business at the university, not outside. You don't need to go to outdoor for IT Support.</p>
+        </div>
+  
+        <!-- Advantage Item 6 -->
+        <div class="advantage-item">
+          <div class="advantage-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+          </div>
+          <h3>Comprehensive Services</h3>
+          <p>From hardware repairs to software development, we offer end-to-end IT solutions to meet all your technology needs under one roof.</p>
+        </div>
+      </div>
+  
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">20+</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">90%</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Support Available</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">1+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+      </div>
+  
+      <div class="cta-container">
+        <a href="services.html" class="premium-button">
+          <span class="button-text">Learn More About Our Services</span>
+          <span class="button-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+    <!-- Video Background Section -->
+<section class="fullscreen-video">
+    <div class="video-container">
+      <!-- Updated video element with poster image as fallback -->
+      <video autoplay muted loop playsinline id="background-video">
+        <!-- Multiple source formats for better browser compatibility -->
+        <source src="assets/vedios/Laptop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <!-- Fallback background if video fails -->
+      <div class="video-fallback"></div>
+      <div class="video-overlay">
+        <div class="video-content">
+          <h2>Innovative Tech Solutions</h2>
+          <p>Empowering businesses with cutting-edge technology</p>
+          <button class="video-cta"><a href="projects.html">Discover More</a></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- Premium News Ticker Section - Add after video section -->
+<section class="news-ticker-section">
+    <div class="ticker-container">
+      <div class="ticker-label">
+        <span class="ticker-label-text">
+          <span class="pulse-dot"></span>
+          TechCenter
+        </span>
+      </div>
+      
+      <div class="ticker-wrapper">
+        <div class="ticker-items">
+          <!-- Ticker Items - First Set -->
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <span>24/7 Remote & Onsite Technical Support for All University Students</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <span>Fixing Software and Hardware Issues </span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6" y2="6"></line>
+                <line x1="6" y1="18" x2="6" y2="18"></line>
+              </svg>
+            </div>
+            <span>IT Consulting and Automation</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 11.08V8l-6-6H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2v-3.08c1.16-.41 2-1.51 2-2.92 0-1.41-.84-2.61-2-3.08zM12 4l4 4h-4V4z"></path>
+                <path d="M18 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
+              </svg>
+            </div>
+            <span>Software Installation and Troubleshooting </span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <span> Custom Cross-Platform App Development </span>
+          </div>
+          
+          <!-- Duplicated for continuous scrolling effect -->
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <span>24/7 Remote & Onsite Technical Support for All University Students</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+              </svg>
+            </div>
+            <span>Fixing Software and Hardware Issues</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
+                <line x1="6" y1="6" x2="6" y2="6"></line>
+                <line x1="6" y1="18" x2="6" y2="18"></line>
+              </svg>
+            </div>
+            <span>IT Consulting and Automation</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 11.08V8l-6-6H6a2 2 0 0 0-2 2v16c0 1.1.9 2 2 2h12a2 2 0 0 0 2-2v-3.08c1.16-.41 2-1.51 2-2.92 0-1.41-.84-2.61-2-3.08zM12 4l4 4h-4V4z"></path>
+                <path d="M18 14.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"></path>
+              </svg>
+            </div>
+            <span>Software Installation and Troubleshooting</span>
+          </div>
+          
+          <div class="ticker-item">
+            <div class="ticker-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <span>Custom Cross-Platform App Development</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Gradient fades on the edges -->
+      <div class="ticker-fade-left"></div>
+      <div class="ticker-fade-right"></div>
+    </div>
+  </section>
+
+
+   <!-- FOOTER -->
+   <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">TechCenter</a>
+          <p class="footer-text">
+            Providing top-notch IT services and solutions for University of Gujrat students and the broader community.
+          </p>
+          <ul class="social-list">
+            <li>
+              <a href="https://github.com/TechnologyVault" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/muhammadbilaltech/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com" class="social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Our Services</p>
+          <ul>
+            <li>
+              <a href="services.html#it-support" class="footer-link">IT Support</a>
+            </li>
+            <li>
+              <a href="services.html#remote-support" class="footer-link">Remote Support</a>
+            </li>
+            <li>
+              <a href="services.html#software-hardware" class="footer-link">Software & Hardware</a>
+            </li>
+            <li>
+              <a href="services.html#graphic-design" class="footer-link">Graphic Design</a>
+            </li>
+            <li>
+              <a href="services.html#web-mobile" class="footer-link">Web & Mobile Development</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Company</p>
+          <ul>
+            <li>
+              <a href="about.html" class="footer-link">About Us</a>
+            </li>
+            <li>
+              <a href="team.html" class="footer-link">Our Team</a>
+            </li>
+            <li>
+              <a href="testimonials.html" class="footer-link">Testimonials</a>
+            </li>
+            <li>
+              <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="terms-of-service.html" class="footer-link">Terms of Service</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-list">
+          <p class="footer-list-title">Contact Us</p>
+          <address class="footer-text">
+            University of Gujrat<br>
+            Jalalpur Jattan Road, Gujrat<br>
+            Punjab, Pakistan
+          </address>
+          <a href="mailto:info@technova.com" class="footer-link">smuhammadbilalh@gmail.com</a>
+          <a href="tel:+923255806291" class="footer-link">+92 325 5806291</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 TechCenter IT Services. All Rights Reserved.
+        </p>
+        <ul class="footer-bottom-list">
+          <li>
+            <a href="terms-of-service.html" class="footer-bottom-link">Terms & Conditions</a>
+          </li>
+          <li>
+            <a href="privacy-policy.html" class="footer-bottom-link">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="sitemap.html" class="footer-bottom-link">Sitemap</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ionicon link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- custom js link -->
+  <script src="./assets/js/script.js"></script>
+
+<!-- Start of ChatBot (www.chatbot.com) code -->
+<script>
+  window.__ow = window.__ow || {};
+  window.__ow.organizationId = "46b5097d-209c-4e82-ad06-69604a4b2aa2";
+  window.__ow.template_id = "b78f9ab3-72d9-4beb-8fa7-20d14b8a8482";
+  window.__ow.integration_name = "manual_settings";
+  window.__ow.product_name = "chatbot";   
+  ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[OpenWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.openwidget.com/openwidget.js",t.head.appendChild(n)}};!n.__ow.asyncInit&&e.init(),n.OpenWidget=n.OpenWidget||e}(window,document,[].slice))
+</script>
+<noscript>You need to <a href="https://www.chatbot.com/help/chat-widget/enable-javascript-in-your-browser/" rel="noopener nofollow">enable JavaScript</a> in order to use the AI chatbot tool powered by <a href="https://www.chatbot.com/" rel="noopener nofollow" target="_blank">ChatBot</a></noscript>
+<!-- End of ChatBot code -->
+
+</body>
+</html>
